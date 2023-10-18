@@ -13,8 +13,8 @@ html {
 }
 
 body {
-    background-color: black;
-    color:white;
+    background-color: rgb(62, 61, 61);
+    color:rgb(124, 122, 122);
     font-family: 'Rubik', sans-serif;
     margin: 10% 10%;    
 }
@@ -29,8 +29,15 @@ body {
     position: relative;
     width: 80vw;
     min-height: 100%;
-    background-color: rgb(6, 54, 97);
+    background-color: black;
     border-radius: 3px;
+}
+
+.description {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: rgb(102, 113, 38);
+    font-weight: bolder;
 }
 
 .profile-img img {
@@ -47,28 +54,24 @@ body {
 }
 
 .button-1 {
-    background-color: rgb(49, 88, 49);
+    background-color: rgb(102, 113, 38);
     border: none;
     margin-top: 3vw;
+    margin-right: 20px;
     padding: 2vw 2.8vw;
     border-radius: 6px;
     color: white;
     box-shadow: 1px 3px 6px rgb(45, 45, 45);
 }
 
-.button-1 a {
-    color: white;
-    text-decoration: none;
-}
-
 .button-1:hover {
     cursor: pointer;
-    background-color: rgb(37, 66, 37);
+    background-color: rgb(75, 81, 39);
     box-shadow: none;
 }
 
 .button-2 {
-    background-color: rgb(6, 54, 97);
+    background-color: transparent;
     border: 1px solid white;
     margin-top: 3vw;
     padding: 1.9vw 2.8vw;
@@ -87,9 +90,9 @@ body {
     padding: 2vw 4vw;
     display: flex;
     align-items: center;
-    background-color: rgba(15, 45, 108, 0.612);
+    background-color: rgb(4, 4, 4);
     border-radius: 20px;
-    box-shadow: 3px 5px 10px rgb(27, 26, 26);
+    box-shadow: 5px 5px 10px rgb(43, 42, 42);
     margin: 2vw;
 }
 
@@ -109,13 +112,47 @@ body {
     
 }
 
+.age, .email, .phone, .address {
+    font-weight: 900;
+    color: rgb(109, 109, 58);
+}
+
 .about h2 {
     padding-bottom: 2vw;
 }
 
-.professional-skills h2 {
+.professional-skills h2, .projects h2 {
     padding: 2vw 4vw;
-    border-top: 0.7px solid rgb(15, 73, 123);
+    border-top: 0.7px solid rgb(16, 16, 16);
+}
+
+.project-name h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4px 4px; 
+} 
+
+.project-name p {
+    margin: 2vw 10vw;
+}
+
+.worked-projects {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    justify-content: space-around;
+}
+
+
+.worked-projects img {
+    width: 40%;
+    border-radius: 6px;
+    margin-bottom: 40px;
+}
+
+.worked-projects img:hover {
+    box-shadow: 1px 3px 14px rgb(227, 216, 216);
 }
 
 .text {
@@ -128,22 +165,22 @@ body {
 }
 
 .html {
-    background: linear-gradient(to right, rgb(49, 88, 49) 0%, rgb(49, 88, 49) 86%, rgb(28, 26, 26) 86%, rgb(28, 26, 26) 100%);
+    background: linear-gradient(to right, rgb(102, 113, 38) 0%, rgb(102, 113, 38) 86%, rgb(28, 26, 26) 86%, rgb(28, 26, 26) 100%);
   }
 .css {
-    background: linear-gradient(to right, rgb(49, 88, 49) 0%, rgb(49, 88, 49) 81%, rgb(28, 26, 26) 81%, rgb(28, 26, 26) 100%);
+    background: linear-gradient(to right, rgb(102, 113, 38) 0%, rgb(102, 113, 38) 81%, rgb(28, 26, 26) 81%, rgb(28, 26, 26) 100%);
   }
 .javascript {
-    background: linear-gradient(to right, rgb(49, 88, 49) 0%, rgb(49, 88, 49) 58%, rgb(28, 26, 26) 58%, rgb(28, 26, 26) 100%);
+    background: linear-gradient(to right, rgb(102, 113, 38) 0%, rgb(102, 113, 38) 58%, rgb(28, 26, 26) 58%, rgb(28, 26, 26) 100%);
   }
 .python {
-    background: linear-gradient(to right, rgb(49, 88, 49) 0%, rgb(49, 88, 49) 68%, rgb(28, 26, 26) 68%, rgb(28, 26, 26) 100%);
+    background: linear-gradient(to right, rgb(102, 113, 38) 0%, rgb(102, 113, 38) 68%, rgb(28, 26, 26) 68%, rgb(28, 26, 26) 100%);
   }
 .c {
-    background: linear-gradient(to right, rgb(49, 88, 49) 0%, rgb(49, 88, 49) 49%, rgb(28, 26, 26) 49%, rgb(28, 26, 26) 100%);
+    background: linear-gradient(to right, rgb(102, 113, 38) 0%, rgb(102, 113, 38) 49%, rgb(28, 26, 26) 49%, rgb(28, 26, 26) 100%);
   }
 .canva {
-    background: linear-gradient(to right, rgb(49, 88, 49) 0%, rgb(49, 88, 49) 56%, rgb(28, 26, 26) 56%, rgb(28, 26, 26) 100%);
+    background: linear-gradient(to right, rgb(102, 113, 38) 0%, rgb(102, 113, 38) 56%, rgb(28, 26, 26) 56%, rgb(28, 26, 26) 100%);
   }
 
 .languages {
@@ -153,15 +190,25 @@ body {
 }
 
 .experience h2, .education h2, .contacts{
-    border-top: 0.7px solid rgb(15, 73, 123);
+    border-top: 0.7px solid rgb(16, 16, 16);
     padding: 2vw 4vw;
 }
 
 .front-end1, .front-end2, .university, .highschool {
     padding: 0 4vw;
-    border: 1px solid rgb(35, 113, 81);
+    border: 0.5px solid rgb(102, 113, 38);
+    border-radius: 3px;
     margin: 2vw 4vw;
     padding: 2vw;
+}
+
+.front-end1, .front-end2, .university, .highschool {
+    transition: transform 0,3s ease;
+}
+.front-end1:hover, .front-end2:hover, .university:hover, .highschool:hover {
+    transform: translateX(10px);
+    border: none;
+    box-shadow: 1px 2px 4px yellow;
 }
 
 .degree, .diploma {
@@ -197,11 +244,12 @@ body {
     width: 100%;
     display: flex;
     font-family: 'Rubik', sans-serif;
+    font-size: 16px;
     margin-top: 3vw;
 }
 
 .submitting {
-    background-color: rgb(6, 54, 97);
+    background-color: transparent;
     border: 1px solid white;
     margin-top: 3vw;
     padding: 15px 20px;
@@ -222,20 +270,19 @@ body {
 }
 
 .top {
-    color: rgb(6, 54, 97);
-    background-color: white;
-    border: none;
+    background-color: transparent;
+    border: 1px solid white;
+    margin-top: 3vw;
     padding: 15px 20px;
-    margin: 0 30px;
     border-radius: 6px;
-    cursor: pointer;
+    color: white;
 }
 
 .top:hover {
-    background-color: rgb(6, 54, 97);
+    background-color: white;
     border: 1px solid white;
     border-radius: 6px;
-    color: white;
+    color: rgb(6, 54, 97);
     box-shadow: 1px 3px 8px rgb(33, 33, 33);
     cursor: pointer;
 }
@@ -257,24 +304,34 @@ body {
 
 .socials small {
     margin: 0 10px;
-    color: gray;
-}
-
-.socials small {
+    color: rgb(100, 98, 98);
     margin-top: 50px;
 }
 
-
 .socials img {
-    width: 2vw;
+    width: 3vw;
     display: flex;
     text-align: center;
+    border-radius: 1vw;
+    padding: 4px 4px;
+}
+
+.socials img:hover {
+    cursor: pointer;
+    background-color: rgb(195, 198, 201);
+    border-radius: 5px;
+    padding: 2px 2px;
+    
 }
 
 .socials li {
     list-style: none;
     display: inline-block;
     margin: 10px 10px;
+    background-color: rgb(132, 129, 129);
+    border-radius: 5px;
+    margin-bottom: 60px;
+    
 }
   
 
@@ -283,6 +340,7 @@ body {
         display: flex;
         flex-direction: column;
         gap: 3vw;
+        margin-top: 5%;
     }
 
     .names {
@@ -299,6 +357,10 @@ body {
 }
 
 @media (max-width: 876px) {
+    .profile-img img {
+        margin-top: 10%;
+    }
+
     .container2 {
         display: flex;
         flex-direction: column;
@@ -317,6 +379,30 @@ body {
 }
 
 @media (max-width:795px) {
+
+    .worked-projects {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 20px;
+    }
+
+    .worked-projects img {
+        padding-bottom: 4vw;
+        width: 100%;
+    }
+
+    .profile-img img {
+        width: 40%;
+        border-radius: 20vw;
+        padding: 2vw;
+    }
+    .about h2 {
+        display: flex;
+        justify-content: center;
+    }
+
     .languages {
         display: flex;
         flex-direction: column;
@@ -369,6 +455,24 @@ body {
 }
 
 @media (max-width: 421px) {
+    .profile-img img {
+        width: 50vw;
+        border-radius: 25vw;
+        padding: 2vw;
+    }
+
+    .worked-projects img {
+        width: 100%;
+        border-radius: 4px;
+    }
+
+    .names h2 {
+        font-size: large;
+    }
+
+    .description {
+        font-size: large;
+    }
 
     .container2 {
         border-radius: 10px;
