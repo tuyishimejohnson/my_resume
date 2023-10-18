@@ -1,1 +1,1 @@
-This is the responsive resume that I created using HTML and CSS
+This is the responsive resume that I created using HTML, CSS and JavaScript.
